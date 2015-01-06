@@ -1,0 +1,16 @@
+apply plugin: 'java'
+
+version = '2.1.0'
+
+jar {
+    baseName = 'nanohttpd-server'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile project(":nanohttpd")
+}
+
